@@ -1,0 +1,17 @@
+[project]
+name = "flaskinicial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask-bcrypt>=1.0.1",
+    "flask-migrate>=4.0.7",
+    "flask-sqlalchemy>=3.1.1",
+    "flask-wtf>=1.2.2",
+    "flask>=3.0.3",
+    "python-dotenv>=1.0.1",
+]
+
+[tool.uv.sources]
+flaskinicial = { workspace = true }
