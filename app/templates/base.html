@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=""pt_PT">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Software gestão de stock</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+	{% block css %}{% endblock css %}
+</head>
+<body>
+	<header >
+		<a href="#"><h2 >Gestão de Stock</h2></a>
+		<nav>
+			<ul>
+				<a href="#"><li >Sign In</li></a>
+					<a href="#"><li class="link">Sign Up</li></a>
+					<a href="#"><li class="link">Profile</li></a>
+					<a href="#"><li class="link">Sign Out</li></a>
+			</ul>
+		</nav>
+	</header>
+	{% block content %}{% endblock content %}
+
+	<footer class="footer-container">
+		<p class="footer-details">Happy Coding! Feel free to use this project as a boilerplate for your other projects</p>
+	</footer>
+</body>
+</html>

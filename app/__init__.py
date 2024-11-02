@@ -13,9 +13,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
-#Importação das route sempre na dentro da iniciação do programa.
-from app.routes import home
-
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
+
+#Importação das route sempre na dentro da iniciação do programa.
+from app.routes import home
+

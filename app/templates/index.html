@@ -1,26 +1,12 @@
-<!doctype html>
-<html lang="pt_PT">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-AU-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Registro de Tarefas</title>
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='css/main.css') }}"
-        />
-    </head>
-    <body>
-        <div class="text-center">
-            <h1>
-                Esta é meu aplicativo inicial para meus projetos em FLASK!!!
-            </h1>
-        </div>
-        <div class="text-center">
-            <h2>
-                Com Flask, Tailwindcss e o novo gerenciador de projeto para
-                python UV.
-            </h2>
-        </div>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content%}
+<div>
+    <h1>Esta é meu aplicativo inicial para meus projetos em FLASK!!!</h1>
+</div>
+<div>
+    <h2>
+        Com Flask, Tailwindcss e o novo gerenciador de projeto para python UV.
+    </h2>
+</div>
+{% endblock content%}
